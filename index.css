@@ -1,0 +1,30 @@
+ 
+#header {
+background:#4020b5;
+color:#ffffff;
+text-align:center;
+padding:20px;
+font-size: 30px;
+}
+
+body {
+	font-size:16px;
+	font-family: 'Lato', sans-serif;
+    font-weight: 400;
+}
+
+#middle {
+	width:100%;
+	max-width:500px;
+	margin: auto;
+}
+
+#error {
+	color: red;
+}
+
+
+ * {
+ 	margin-top:10px;
+ }
+

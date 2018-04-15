@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="index.css">
+<link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+	<title>ENS subdomain</title>
+</head>
+<body>
+
+<div id="middle">
+	<div id="header"> ENS Subdomains </div>	
+<div> This is a quick tool for setting up subdomains under any ENS domain you own. </div>
+<div>For example if you own the ENS name <i>geeogi.eth</i> then you can get <i>sub.geeogi.eth</i> for free (2mins + ~$0.50 tx fees).</div> 
+
+<div>Enter the sub you'd like (no spaces/caps/non-standard characters):</div>
+<input type="text" id="sub" name="sub" placeholder="e.g. sub"><br>
+<div>Domain that you own:</div>
+<input type="text" id="domain" name="domain" placeholder="e.g. domain.eth"><br>
+<div>Address you'd like to point <i>sub.domain.eth</i> to: </div>
+<input type="text" id="newAddress" name="newAddress" placeholder="e.g. 0x12345678...."><br>
+
+
+
+<div>1) Set the subnode owner to your address to allow you to control it.</div>
+
+<div><i>Click the button below then confirm TX with Metamask/Mist and wait for it to be mined before proceeding to the next step.</i></div>
+
+<button id="button1" onclick="lib.step1()" value="button1">Set Subnode Owner</button>
+<div id="error"></div>
+<div>2) Set the subnode to use the Public Resolver contract.</div>
+<button id="button2" onclick="lib.step2()" value="button2">Set Public Resolver</button>
+<div>3) Set the subnode to point to your desired address.</div>
+<button id="button3" onclick="lib.step3()" value="button3">Set Address</button>
+<div> That's it. Wait for the final TX to be mined and then search your subdomain on etherscan.io to confirm your new address. </div>
+
+<div>P.s. if you're seeing a transaction error message then it's probably because you don't own the domain you entered. You must own the domain and send the TX from the owner account. See this <a href="https://www.reddit.com/r/ethereum/comments/6clvs6/a_quick_guide_on_getting_an_ens_name_and_setting/">guide</a> for help in setting up a domain.</div>
+
+<div> Source code: </div>
+<div> Contact: george6bennett@gmail.com </div>
+<div> Donations: georgeb.eth </div>
+</div>
+
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="bundle.js"></script>
+<script>
+var lib = new MyLibrary();
+//lib.step1();
+</script>
+
+</html>
