@@ -63,7 +63,7 @@ resolverABI = JSON.parse('[{"constant":true,"inputs":[{"name":"interfaceID","typ
 ENSresolverContract = web3.eth.contract(resolverABI);
 resolverInstance = ENSresolverContract.at('0x5ffc014343cd971b7eb70732021e26c35b744cc4');
 
-///////////////////////// Export Functions //////////////////////////
+///////////////////////// Export Functions To Expose Them To Browserify//////////////////////////
 
 module.exports = MyLibrary;
 
