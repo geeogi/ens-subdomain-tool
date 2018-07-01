@@ -1,5 +1,5 @@
 # ens-subdomain-tool
-Webpage for generating ENS subdomains. Uses Web3, ENS Namehash, Browserify. 
+Webpage for generating ENS subdomains. 
 
 1) First, make sure you own an ENS domain.
 2) Then, use this tool to configure subdomains. 
